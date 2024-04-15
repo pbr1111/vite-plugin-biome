@@ -1,7 +1,22 @@
 {
-  "name": "@kide/biome-plugin",
-  "version": "0.0.0",
-  "private": true,
+  "name": "@pbr1111/vite-plugin-biome",
+  "version": "1.0.0",
+  "description": "Vite plugin to run biome.js",
+  "private": false,
+  "author": "pbr1111 <pbr1111@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pbr1111/vite-plugin-biome.git"
+  },
+  "homepage": "https://github.com/pbr1111/vite-plugin-biome#readme",
+  "keywords": [
+    "vite",
+    "vite plugin",
+    "plugin",
+    "biome",
+    "biomejs"
+  ],
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -12,11 +27,14 @@
       "require": "./dist/index.cjs"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup"
   },
   "devDependencies": {
+    "@types/node": "^20.12.7",
     "tsup": "^8.0.2"
   },
   "peerDependencies": {
