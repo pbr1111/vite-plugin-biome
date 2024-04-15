@@ -15,6 +15,7 @@ jobs:
           registry-url: https://registry.npmjs.org/
           scope: "@pbr1111"
       - run: npm install
+      - run: npm build
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
