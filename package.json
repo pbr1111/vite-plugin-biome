@@ -1,6 +1,6 @@
 {
   "name": "@pbr1111/vite-plugin-biome",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vite plugin to run biome.js",
   "private": false,
   "author": "pbr1111 <pbr1111@gmail.com>",
