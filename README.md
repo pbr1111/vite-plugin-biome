@@ -46,10 +46,8 @@ import { biomePlugin } from '@pbr1111/vite-plugin-biome';
 export default defineConfig({
   plugins: [
     biomePlugin({
-      mode: 'format', // Set to 'format' to automatically format code
-      path: 'src/**/*.js', // Process only JavaScript files in the 'src' directory
-      applyFixes: true, // Apply formatting fixes
-      failOnError: true, // Throw an error on Biome errors
+      mode: 'lint',
+      failOnError: process.env.NODE_ENV === 'production'
     }),
   ],
 });
