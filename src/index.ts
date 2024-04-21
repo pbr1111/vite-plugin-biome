@@ -27,7 +27,7 @@ const DEFAULT_OPTIONS: Required<Options> = {
 	verbose: false,
 };
 
-const biomePlugin = (options: Options): Plugin => {
+const biomePlugin = (options: Options = {}): Plugin => {
 	let config: Required<Options>;
 	let command: string;
 
