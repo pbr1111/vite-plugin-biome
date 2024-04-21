@@ -36,19 +36,8 @@ By default, the plugin runs Biome in linting mode (lint) on your entire project.
 - `mode`: Specify the Biome mode (`lint`, `format`, or `check`). Defaults to `lint`.
 - `path`: Define the path to the files or directories you want to process. Defaults to the current working directory (`.`).
 - `applyFixes`: Set to `true` to apply Biome's formatting or fixing suggestions (depends on mode). Defaults to `false`.
-- `failOnError`: Set to `true` to throw an error when Biome encounters issues. Defaults to `false`.
+- `errorOnWarnings`: Set to `true` to threat warnings as errors. Defaults to `false`.
+- `failOnError`: Set to `true` to throw an error when Biome encounters issues. Defaults to `process.env.NODE_ENV === 'production'`.
+- `useServer`: Set to `false` to start a new LSP proxy server in each execution. If you are using the Biome VSCode extension, it's recommended to set to true as it will reuse the extension server. Defaults to `true`.
+- `verbose`: Set to `true` to print additional diagnostics and some diagnostics show more information. Defaults to `false`.
 
-### Example
-```ts
-import { defineConfig } from 'vite';
-import { biomePlugin } from '@pbr1111/vite-plugin-biome';
-
-export default defineConfig({
-  plugins: [
-    biomePlugin({
-      mode: 'lint',
-      failOnError: process.env.NODE_ENV === 'production'
-    }),
-  ],
-});
-```
