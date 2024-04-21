@@ -39,6 +39,6 @@ By default, the plugin runs Biome in linting mode (lint) on your entire project.
 - `applyFixes`: Set to `true` to apply Biome's formatting or fixing suggestions (depends on mode). Defaults to `false`.
 - `errorOnWarnings`: Set to `true` to threat warnings as errors. Defaults to `false`.
 - `failOnError`: Set to `true` to throw an error when Biome encounters issues. Defaults to `process.env.NODE_ENV === 'production'`.
-- `useServer`: Set to `false` to start a new LSP proxy server in each execution. If you are using the Biome VSCode extension, it's recommended to set to true as it will reuse the extension server. Defaults to `true`.
+- `useServer`: Set to `true` to reuse the LSP proxy server in each execution. Defaults to `false`.
 - `verbose`: Set to `true` to print additional diagnostics and some diagnostics show more information. Defaults to `false`.
 

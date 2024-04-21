@@ -23,7 +23,7 @@ const DEFAULT_OPTIONS: Required<Options> = {
 	applyFixes: false,
 	errorOnWarnings: false,
 	failOnError: process.env.NODE_ENV === "production",
-	useServer: true,
+	useServer: false,
 	verbose: false,
 };
 
