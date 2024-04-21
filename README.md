@@ -1,7 +1,8 @@
 # @pbr1111/vite-plugin-biome
 
 [![npm version](https://badge.fury.io/js/%40pbr1111%2Fvite-plugin-biome.svg)](https://badge.fury.io/js/%40pbr1111%2Fvite-plugin-biome)
-![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@pbr1111/vite-plugin-biome)
+![NPM Downloads](https://img.shields.io/npm/dm/%40pbr1111%2Fvite-plugin-biome)
+
 
 This Vite plugin seamlessly integrates the Biome linter, formatter, and checker into your development workflow, providing lightning-fast code analysis and formatting directly within the build process.
 
