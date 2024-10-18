@@ -15,6 +15,7 @@ type Options = {
 	applyFixes?: boolean;
 	useServer?: boolean;
 	verbose?: boolean;
+	args?: string;
 };
 
 const DEFAULT_OPTIONS: Required<Options> = {
@@ -25,6 +26,7 @@ const DEFAULT_OPTIONS: Required<Options> = {
 	failOnError: process.env.NODE_ENV === "production",
 	useServer: false,
 	verbose: false,
+	args: "",
 };
 
 const biomePlugin = (options: Options = {}): Plugin => {
@@ -71,6 +73,7 @@ const biomePlugin = (options: Options = {}): Plugin => {
 				config.useServer ? "--use-server" : undefined,
 				config.verbose ? "--verbose" : undefined,
 				"--colors=force",
+				config.args,
 			]
 				.filter((x) => !!x)
 				.join(" ");
