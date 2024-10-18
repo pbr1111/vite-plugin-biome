@@ -41,4 +41,5 @@ By default, the plugin runs Biome in linting mode (lint) on your entire project.
 - `failOnError`: Set to `true` to throw an error when Biome encounters issues. Defaults to `process.env.NODE_ENV === 'production'`.
 - `useServer`: Set to `true` to reuse the LSP proxy server in each execution. Defaults to `false`.
 - `verbose`: Set to `true` to print additional diagnostics and some diagnostics show more information. Defaults to `false`.
+- `args`: Pass extra arguments to the command (https://biomejs.dev/reference/cli/).  Check Defaults to `''`.
 
